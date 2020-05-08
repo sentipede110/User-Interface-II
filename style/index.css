@@ -1,1 +1,173 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0px solid grey;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+box-sizing:border-box;
+max-width:100%;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size:1.6rem;
+}
+
+.container {
+  Width: 100%;
+  }
+
+h1 {
+  margin: 10%
+  font-size: 5rem;
+  text-align: Left;
+}
+
+h2, h3 {
+  font-size: 2.5rem;
+}
+
+#section-top{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+#section-top .img{
+  width: 50%;
+  display:flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#section-top .img img{
+  margin:2%;
+  align-self: auto;
+}
+
+.main-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.main-content a {
+  width: 50%;
+  margin: 3% 3%;
+  padding: 3%;
+  color: white;
+  background: #F87B99;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.main-content p{
+  padding: 3%;
+}
+
+.main-content h2{
+  margin:3%;
+}
+
+.img-top{
+margin: 3%;
+display:flex;
+justify-content:space-evenly;
+}
+
+.img-top img{
+  margin: 1%;
+}
+
+.img-bottom{
+  margin: 3%;
+    display:flex;
+  justify-content:space-evenly;
+}
+
+.img-bottom img{
+  margin:1%;
+}
+
+.footer-content div{
+    display:flex;
+    justify-content: center;
+}
+
+footer .footer-content h3 {
+  padding: 0;
+  margin: 3% 0;
+}
+
+.footer-content a{
+margin: 0 10px;
+border: 1px solid lightgray;
+padding: 3%;
+display: inline-block;
+border-radius: 3%;
+color: white;
+text-decoration: none;
+margin-bottom: 3%;
+background: #F87B99;
+}
+
+@media (max-width: 800px)
+
+#section-bottom{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+@media (max-width: 800px){
+  .img-top {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .img-bottom{
+  display:flex;
+  flex-wrap: wrap;
+}
+#section-top{
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+@media(max-width: 500px){
+  .img-top {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .img-bottom{
+  display:flex;
+  flex-wrap: wrap;
+}
+#section-top{
+  display:flex;
+  flex-direction:column;
+}
+}
